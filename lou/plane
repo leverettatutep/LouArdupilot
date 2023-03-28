@@ -1,0 +1,3 @@
+cd ardupilot/ArduPlane
+sim_vehicle.py -f plane --map --osd --console -LELP
+

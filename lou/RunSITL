@@ -1,0 +1,23 @@
+Start sitl
+cd ~/ardupilot/ArduPlane
+sim_vehicle.py -f quadplane --map --osd --console
+sim_vehicle.py -f quadplane --map --osd --console -LELP
+sim_vehicle.py -f quadplane --map --osd --console -l+90,-90,100,0
+sim_vehicle.py --vehicle=AruCopter -f quad --map --osd --console -LELP --debug --gdb-stopped
+elp is 31.802263, -106.393061 3920.6 
+
+Run anaconda
+anaconda-navigator
+
+Flight Gear
+Simulator
+
+Debugging python with vcode
+open Tools/autotest/sim_vehicle.py in vcode run debugger
+
+Debug notes
+        run_in_terminal_window(cmd_name, cmd + c) starts the simulator
+                p = subprocess.Popen(cmd, **kw) starts mavproxy among other things
+                
+                
+        p = subprocess.Popen(cmd, **kw)
