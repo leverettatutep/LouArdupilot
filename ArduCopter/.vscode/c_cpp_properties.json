@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "../libraries/**",
+                "/home/louis/ardupilot/libraries/AP_HAL"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/lib/ccache/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
