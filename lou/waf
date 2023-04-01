@@ -1,0 +1,5 @@
+set -o xtrace
+read -p "Press any key to continue... " -s
+cd /home/louis/ardupilot/modules
+waf/waf-light configure --board sitl -vvv
+read -p "Press any key to continue... " -n1 -s
