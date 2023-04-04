@@ -1,6 +1,6 @@
 cd ../ArduCopter
 #sim_vehicle.py --map --osd --console -LELP
 #sim_vehicle.py --vehicle=ArduCopter -f quad --map --osd --console -LELP --debug --gdb-stopped
-sim_vehicle.py --vehicle=ArduCopter -f quad --map --osd --console -LELP --debug 
+sim_vehicle.py --vehicle=ArduCopter --clean -f quad --map --osd --console -LELP --debug 
 #read -p "Enter to exit"
 
