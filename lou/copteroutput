@@ -1,0 +1,57 @@
+[0mSetting top to                           :[0m [32m/home/louis/ardupilot[0m 
+[0mSetting out to                           :[0m [32m/home/louis/ardupilot/build[0m 
+[0mAutoconfiguration                        :[0m [32menabled[0m 
+[0mSetting board to                         :[0m [32msitl[0m 
+[0mUsing toolchain                          :[0m [32mnative[0m 
+[0mChecking for 'g++' (C++ compiler)        :[0m [32m/usr/lib/ccache/g++[0m 
+[0mChecking for 'gcc' (C compiler)          :[0m [32m/usr/lib/ccache/gcc[0m 
+[0mChecking for c flags '-MMD'              :[0m [32myes[0m 
+[0mChecking for cxx flags '-MMD'            :[0m [32myes[0m 
+[0mCXX Compiler                             :[0m [32mg++ 11.3.0[0m 
+[0mChecking for need to link with librt     :[0m [32mnot necessary[0m 
+[0mChecking for feenableexcept              :[0m [32myes[0m 
+[0mChecking for library sfml-graphics       :[0m [32myes[0m 
+[0mChecking for library sfml-window         :[0m [32myes[0m 
+[0mChecking for library sfml-system         :[0m [32myes[0m 
+[0mChecking for Graphics.hpp                :[0m [32myes[0m 
+[0mEnabled OpenDroneID                      :[0m [33mno[0m 
+[0mEnabled firmware ID checking             :[0m [33mno[0m 
+[0mGPS Debug Logging                        :[0m [33mno[0m 
+[0mEnabled custom controller                :[0m [32myes[0m 
+[0mChecking for HAVE_CMATH_ISFINITE         :[0m [32myes[0m 
+[0mChecking for HAVE_CMATH_ISINF            :[0m [32myes[0m 
+[0mChecking for HAVE_CMATH_ISNAN            :[0m [32myes[0m 
+[0mChecking for NEED_CMATH_ISFINITE_STD_NAMESPACE :[0m [32myes[0m 
+[0mChecking for NEED_CMATH_ISINF_STD_NAMESPACE    :[0m [32myes[0m 
+[0mChecking for NEED_CMATH_ISNAN_STD_NAMESPACE    :[0m [32myes[0m 
+[0mChecking for header endian.h                   :[0m [32myes[0m 
+[0mChecking for header byteswap.h                 :[0m [32myes[0m 
+[0mChecking for HAVE_MEMRCHR                      :[0m [32myes[0m 
+[0mConfigured VSCode Intellisense:                :[0m [33mno[0m 
+[0mChecking for program 'python'                  :[0m [32m/usr/bin/python[0m 
+[0mChecking for python version >= 2.7.0           :[0m [32m3.10.6[0m 
+[0mChecking for program 'python'                  :[0m [32m/usr/bin/python[0m 
+[0mChecking for python version >= 2.7.0           :[0m [32m3.10.6[0m 
+[0mDSDL compiler                                  :[0m [32m/home/louis/ardupilot/modules/uavcan/libuavcan/dsdl_compiler/libuavcan_dsdlc[0m 
+[0mSource is git repository                       :[0m [32myes[0m 
+[0mUpdate submodules                              :[0m [32myes[0m 
+[0mChecking for program 'git'                     :[0m [32m/usr/bin/git[0m 
+[0mChecking for program 'size'                    :[0m [32m/usr/bin/size[0m 
+[0mBenchmarks                                     :[0m [33mdisabled[0m 
+[0mUnit tests                                     :[0m [32menabled[0m 
+[0mScripting                                      :[0m [32menabled[0m 
+[0mScripting runtime checks                       :[0m [32menabled[0m 
+[0mDebug build                                    :[0m [32menabled[0m 
+[0mCoverage build                                 :[0m [33mdisabled[0m 
+[0mSITL 32-bit build                              :[0m [33mdisabled[0m 
+[0mChecking for program 'rsync'                   :[0m [32m/usr/bin/rsync[0m 
+'configure' finished successfully (1.083s)
+SIM_VEHICLE: Start
+SIM_VEHICLE: Killing tasks
+/home/louis/.config/ardupilot/locations.txt
+SIM_VEHICLE: Starting up at [31.802263, -106.393061, 3920.6, -90.0] (ELP)
+SIM_VEHICLE: WAF build
+SIM_VEHICLE: Configure waf
+SIM_VEHICLE: "/home/louis/ardupilot/modules/waf/waf-light" "configure" "--board" "sitl" "--debug" "--enable-sfml" "--sitl-osd"
+{'model': '+', 'waf_target': 'bin/arducopter', 'default_params_filename': 'default_params/copter.parm', 'sitl-port': True}
+SIM_VEHICLE: Killing tasks

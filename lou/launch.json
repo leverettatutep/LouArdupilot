@@ -5,15 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "name": "(gdb) Pipe Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["geeks", "for", "geeks"],
+            "program": "${file}",
+            "args": [],
             "stopAtEntry": true,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
+            "pipeTransport": {
+                "debuggerPath": "/usr/bin/gdb",
+                "pipeProgram": "/usr/bin/ssh",
+                "pipeArgs": [],
+                "pipeCwd": ""
+            },
             "MIMode": "gdb",
             "setupCommands": [
                 {
@@ -26,9 +32,8 @@
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
-            ],
-            "preLaunchTask": "C/C++: g++ build active file"
+            ]
         }
-
-    ]
+    ],
+    "program": "${file}"
 }

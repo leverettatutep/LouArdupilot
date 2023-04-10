@@ -1,3 +1,8 @@
+The sim_vehicle.py script is on the $PATH so it is known 
+Also if a py file first line is: #!/usr/bin/env python 
+then it can be run (make it a runnable file) by giving its name otherwise you must use
+python filename.py
+
 Start sitl
 cd ~/ardupilot/ArduPlane
 sim_vehicle.py -f quadplane --map --osd --console
@@ -21,3 +26,25 @@ Debug notes
                 
                 
         p = subprocess.Popen(cmd, **kw)
+        
+Running library example sketches check out learning ardupilot web 
+Run the arupilot ap_gps
+	cd ardupilot
+	./waf configure --board=pixhawk (not really)
+	./waf build --target examples/INS_generic --upload
+	
+use the following to build the arducopter from the ardupilot directory
+	modules/waf/waf-light build --target bin/arducopter
+
+To run it use
+	Tools/autotest/run_in_terminal_window.sh ArduCopter /home/louis/ardupilot/build/sitl/bin/arducopter -S --model + --speedup 1 --slave 0 --defaults Tools/autotest/default_params/copter.parm --sim-address=127.0.0.1 -I0 --home (the home is the lat lon elevation attitude but does not work)
+	
+	this is done with the start_vehicle command in the original py file.
+
+Finally it runs mavproxy which brings up the osd
+	The py file hangs at this point
+	
+run mavproxy with 
+mavproxy.py --out 127.0.0.1:14550 --out 127.0.0.1:14551 --master tcp:137.0.0.1:5760 --sitl 127.0.0.1:5501 --map --console
+
+	

@@ -1,0 +1,5 @@
+../Tools/autotest/run_in_terminal_window.sh ArduCopter /home/louis/ardupilot/build/sitl/bin/arducopter -S --model + --speedup 1 --slave 0 --defaults /home/louis/ardupilot/Tools/autotest/default_params/copter.parm --sim-address=127.0.0.1 -I0 
+
+mavproxy.py --moddebug 3 --out 127.0.0.1:14550 --out 127.0.0.1:14551 --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501 --map --console
+
+

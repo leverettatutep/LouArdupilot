@@ -3,9 +3,7 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
-                "../libraries/**",
-                "/home/louis/ardupilot/libraries/AP_HAL"
+                "${workspaceFolder}/**"
             ],
             "defines": [],
             "compilerPath": "/usr/lib/ccache/gcc",

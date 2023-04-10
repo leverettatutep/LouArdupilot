@@ -1,0 +1,8 @@
+#cd ardupilot
+cd ..
+dir
+python waf configure --board=SITL
+#modules/waf/waf-light configure --board=SITL
+python waf build --target examples/GPS_AUTO_test --upload
+#read -p "Wait for it"
+
