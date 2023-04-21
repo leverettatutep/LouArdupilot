@@ -1,0 +1,6 @@
+set -o xtrace
+alias waf='python /home/louis/ardupilot/waf'
+read -p "Press any key to continue... " -s
+cd /home/louis/ardupilot/modules
+waf/waf-light configure --board sitl
+read -p "Press any key to continue... " -n1 -s

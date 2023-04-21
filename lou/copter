@@ -1,0 +1,2 @@
+cd ../ArduCopter
+sim_vehicle.py --console --map --location=ELP
